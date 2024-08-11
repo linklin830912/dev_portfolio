@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import MenuSection from './sections/MenuSection';
+import PageSection from './sections/PageSection';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-[100vw] h-[100vh] bg-background-blue flex flex-col items-stretch overflow-clip" > 
+      <div className='w-[100%] h-[7vh]'>
+        <MenuSection/>
+      </div>
+      <div className='flex h-[93vh] justify-center px-60 overflow-clip'>
+        <PageSection/>
+      </div>
     </div>
   );
 }
