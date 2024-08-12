@@ -10,11 +10,27 @@ module.exports = {
         'menu-blue': '#0f1924',
         'menu-font': '#faf4be',
         'menu-font-hover': '#ffffff',
+        'content-font': '#faf4be',
       },
       fontFamily: {
         sans: ['Graphik', 'sans-serif'],
         serif: ['Merriweather', 'serif'],
       },
+      fontSize: {
+        'h1': '52px',
+        'h2': '36px',
+        'h3': '24px',
+        'h4': '18px',
+        'h5': '14px',
+        'h6': '12px',
+      },
+       screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    }
     },
   },
   plugins: [],

@@ -1,12 +1,22 @@
 import React from "react";
 import MenuButton from "../components/buttons/MenuButton";
+import LanguageOption from "../components/options/LanguageOption";
+import { useTranslation } from "react-i18next";
 function MenuSection() {
+    const { t } = useTranslation(["menu"]);
     return (
-        <div className="flex items-center bg-menu-blue h-[100%] pt-3">
-            <MenuButton to="/about" content="about" />
-            <MenuButton to="/portfolio"  content="portfolio"/>
-            <MenuButton to="/resume" content="resume" />
-            <MenuButton to="/contact"  content="contact"/>
+        <div className="flex flex-col md:pt-3 md:flex-row md:items-center justify-between h-[100%]">
+            <div className="flex flex-col md:flex-row">
+                <MenuButton to="/" content={t('menu:about')} />
+                <MenuButton to="/portfolio"  content={t('menu:portfolio')} />
+                <MenuButton to="/resume" content={t('menu:resume')} />
+                <MenuButton to="/contact" content={t('menu:contact')} />
+            </div>
+            <div className="text-right p-1 pb-32 text-h3 text-menu-font">{"▹"}</div>
+            <div className="p-5">
+                <LanguageOption/>
+            </div>
+            
         </div>
     );
  }
