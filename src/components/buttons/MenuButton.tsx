@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function MenuButton(props: MenuButtonProps) {
     return (
         
-        <Link className="p-5 text-menu-font hover:text-menu-font-hover hover:underline hover:italic font-sans"
+        <Link className="p-5 text-menu-font hover:text-menu-font-hover hover:underline hover:italic font-sans text-h5 md:text-h4"
             to={props.to}>{props.content}</Link>       
         
     );

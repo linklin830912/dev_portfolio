@@ -6,9 +6,9 @@ import ContactPage from "../pages/ContactPage";
 import PortfolioPage from "../pages/PortfolioPage";
 function PageSection() {
     return (
-        <div className="w-[100%] px-2 lg:px-0 overflow-x-hidden overflow-y-hidden">            
+        <div className="w-[100%] px-2 lg:px-0 overflow-hidden">            
             <Routes>
-                <Route path="/" element={<AboutPage />} >link</Route>
+                <Route path="/" element={<AboutPage />} />
                 <Route path="/portfolio" element={ <PortfolioPage/> } />
                 <Route path="/resume" element={ <ResumePage/> } />
                 <Route path="/contact" element={ <ContactPage/> } />

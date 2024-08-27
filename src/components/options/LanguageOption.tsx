@@ -3,7 +3,7 @@ import i18n from "../../i18n.config";
 function LanguageOption() {
     const [selectedLanguage, setSelectedLanguage] = useState<string>('english');
     return (
-        <select className="bg-menu-blue text-menu-font w-12" value={selectedLanguage} onChange={handleChange}>
+        <select className="bg-menu-blue text-menu-font w-12 text-h6 md:text-h5" value={selectedLanguage} onChange={handleChange}>
             <option value="en">en</option>
             <option value="zh">zh</option>            
         </select>
