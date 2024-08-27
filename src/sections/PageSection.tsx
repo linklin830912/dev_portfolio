@@ -8,10 +8,10 @@ function PageSection() {
     return (
         <div className="w-[100%] px-2 lg:px-0 overflow-hidden">            
             <Routes>
-                <Route path="/" element={<AboutPage />} />
-                <Route path="/portfolio" element={ <PortfolioPage/> } />
-                <Route path="/resume" element={ <ResumePage/> } />
-                <Route path="/contact" element={ <ContactPage/> } />
+                <Route path="/dev_portfolio/about" element={<AboutPage />} />
+                <Route path="/dev_portfolio/portfolio" element={ <PortfolioPage/> } />
+                <Route path="/dev_portfolio/resume" element={ <ResumePage/> } />
+                <Route path="/dev_portfolio/contact" element={ <ContactPage/> } />
             </Routes>
         </div>
     );
