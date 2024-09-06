@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 function IntroBlock() {
     const { t } = useTranslation(["about"]);
     return (
-        <div className="w-[100%] flex flex-col lg:flex-row lg:items-center pt-[50%] md:pt-[30%] lg:pt-[15%]">
+        <div className="pt-[30%] lg:pt-0 w-[100%] flex flex-col lg:flex-row lg:items-center">
             <div className="lg:min-w-[40%] pb-5 lg:pb-0 text-content-font">
                 <h2 className="text-h2 md:text-h1">{t('hello')}</h2>
                 <h2 className="text-h3 md:text-h2">{t('myName')}</h2>

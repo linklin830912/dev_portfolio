@@ -11,12 +11,14 @@ module.exports = {
         'menu-font': '#faf4be',
         'menu-font-hover': '#ffffff',
         'content-font': '#faf4be',
+        'content-sub-font': '#1f2b38',
       },
       fontFamily: {
         sans: ['Graphik', 'sans-serif'],
         serif: ['Merriweather', 'serif'],
       },
       fontSize: {
+        'h0': '180px',
         'h1': '52px',
         'h2': '36px',
         'h3': '24px',

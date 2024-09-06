@@ -1,8 +1,131 @@
 {
-  "hello": "你好，",
+  "hello": "您好",
   "myName": "我是林格，",
-  "nickName": "或者",
-  "intro": "I am a developer with dual proficiency in both frontend and backend technologies.",
-  "background": "I have a academic background in design and architecture. Passionate in 3D implementation for user experiences.\nIntegrating aesthetics and performance for impactful applications.",
-  "current": "Currently, I am back to school,\n Studied in Master of Computing Australian National University.\nSpecialized in Computer Graphics and Computer Vision."
+  "nickName": "或",
+  "intro": "I am a full-stack and web developer with three years of experience, combining a strong background in technology and design.",
+  "background": "I have a deep passion for computer graphics and machine learning, with a dream of becoming a technical expert in user experience across various fields, particularly in 3D. My goal is to seamlessly integrate aesthetics and performance to create impactful and engaging applications.",
+  "current": "Currently, I am back to school,\n Studying in Master of Computing Australian National University.\nSpecialized in Computer Graphics and Computer Vision.",
+  "skills":{
+    "programming_professional":" Programming - Professional",
+    "programming_academic":" Programming - Academic",
+    "developer_tools":"Developer tools",
+    "designer_tools":"Designer tools",
+    "interest":"Interest"
+  },
+  "work_experience":{
+    "accomplishments":"Accomplishments",
+    "role_description":"Role Description",
+    "company_introcdution":"Company Introdution",
+    "ibuypower":{
+      "title":"Mid-Level Web Developer",
+      "companyName":"iBuyPower, Taipei",
+      "date":"July 2023 - Jan 2024",
+      "accomplishments":[
+        "Implemented the Three.js framework seamlessly within Next.js for enhanced web development capabilities.",
+        "Provided guidance and tutoring to the development team on 3D concepts, including topology, shader material, and 3D rendering.",
+        "Played a pivotal role in the recruitment process, assisting in the hiring of 3D designers for the team.",
+        "Designed and constructed high-performance Responsive Web Design (RWD) pages using Next.js and TypeScript.",
+        "Mentored junior developers, offering guidance and tutoring on C# and SQL to foster their skill development.",
+        "Collaborated effectively in Jenkins, contributing to streamlined and efficient project workflows."
+      ],
+      "role_description":"In my role as a web developer specializing in 3D, I took the lead in developing a dynamic 3D showroom for a five-member team. As the sole developer well-versed in 3D development, I introduced essential tools like Three.js, WebGL, and fundamental 3D concepts. I also facilitated the team's transition to a 3D-friendly framework, providing guidance and tutoring to acquaint my colleagues with the terminology and principles of 3D development. Additionally, I optimized intricate models for seamless integration across IOS, Android, and desktop platforms, while ensuring top-tier performance with high-quality web pages in Next JS for responsive design. As a team leader, I played a pivotal role in recruiting skilled 3D designers, contributing to an enhanced project management process.",
+      "company_introduction":"iBuyPower, a prominent U.S.-based gaming PC e-commerce brand, is renowned for its customized and pre-built configurations. Recognized as the second-best seller by Intel, it is celebrated for delivering exceptional products and fostering a vibrant gaming community.",
+      "company_link":"https://www.ibuypower.com/",
+      "other_links":[
+        {"name":"3d-showroom", "link":"https://www.ibuypower.com/3d-showroom/y70"}
+      ]
+    },
+    "fnz":{
+      "title":"Analysis Developer",
+      "companyName":"FNZ Group, Shanghai",
+      "date":"May 2022 - July 2023",
+      "company_site":"Company Site",
+      "accomplishments":[
+        "Developed high-performance Single Page Applications (SPAs) using React, React-Router, Redux, and React form.",
+        "Created large-scale business system frameworks in C#, .NET, and SQL, utilizing the MVC framework.",
+        "Implemented RESTful APIs, conducted data and code analysis, and facilitated seamless collaboration between frontend and backend development.",
+        "Applied various design patterns proficiently in building large-scale business system frameworks.",
+        "Utilized developer tools such as Postman, Chrome Dev Tools, React Profiler, and SQL Profiler to optimize the development process.",
+        "Demonstrated expertise in Git, DevOps, TeamCity, and JIRA, essential tools for version control, continuous integration, and automated software development processes.",
+        "Provided guidance and tutoring to team members on React and TypeScript."
+      ],
+      "role_description":"As a vital member of an international team, I played a key role in developing sustainable web applications for remote projects in the UK and Germany. Involved in three main projects and offering support to others, I specialized in crafting Single Page Applications (SPAs) on the frontend. Additionally, I actively contributed to backend operations, focusing on the development and maintenance of APIs for seamless integration with frontend applications.",
+      "company_introduction":"FNZ is a globally recognized consulting firm specializing in financial services and applications. With a prestigious clients including industry leaders like Barclays, AVIVA, Standard Life, and more, FNZ has established itself as a trusted advisor in the international financial sector.",
+      "company_link":"https://www.fnz.com/",
+      "other_links":[
+        {"name":"Sample Client Site", "link":"https://www.jameshay.co.uk/"}
+      ]
+    },
+    "robotic_plus":{
+      "title":"Software Engineer",
+      "companyName":"RoboticPlus AI, Shanghai",
+      "date":"Sep 2020 - May 2022",
+      "accomplishments":[
+        "Led the planning and execution of the ROBIM UI prototype, overseeing the entire process.",
+        "Developed frontend applications in C# and WPF, emphasizing user experience for robotic construction.",
+        "Collaborated with designers in Figma and the Adobe suite to design and plan user interfaces.",
+        "Conducted testing and implemented geometry libraries in C# for enhanced application functionality.",
+        "Collaborated closely with mechanical engineers on TCP (Transmission Control Protocol) testing as part of onsite collaboration efforts."
+
+      ],
+      "role_description":"As a vital member of an international team, I played a key role in developing sustainable web applications for remote projects in the UK and Germany. Involved in three main projects and offering support to others, I specialized in crafting Single Page Applications (SPAs) on the frontend. Additionally, I actively contributed to backend operations, focusing on the development and maintenance of APIs for seamless integration with frontend applications.",
+      "company_introdution":"Robotic Plus is a pioneering startup based in Shanghai that focuses on 3D software product and innovative architecture manufacturing solutions. The company is revolutionizing the architecture field by promoting automated solutions for construction, bringing efficiency, and precision to the industry.",
+      "company_link":"https://www.roboticplus.com/en/about/index/cate_id/59.html",
+      "other_links":[
+        {"name":"LinkedIn", "link":"https://www.linkedin.com/company/roboticplus-tech/"}
+      ]
+    }
+  },
+  "education":{
+    "anu":{
+      "institute_name": "The Australian National University",
+      "title":"Master of Computing",
+      "sub_title": "Specialized in Machine Learning and HCI",
+      "date": "Feb 2024 - Dec 2025",
+      "accomplishments": [
+        "Familiar with C++, OpenGL, and understanding of computer graphic",
+        "Familiar with Pytorch, OpenCV, and understanding of computer vision",
+        "Familiar with Java in software construction",
+        "Familiar with C#, Unity game development"
+      ],
+      "institute_introduction": "ANU is ranked among the top universities globally and is known for its strong emphasis on research and high-quality education",
+      "institute_link": "https://www.anu.edu.au/",
+      "other_links":[]
+    },
+    "cita":{
+      "institute_name": "Royal Danish Academy",
+      "title":"Master of Art",
+      "sub_title": "CITA - Centre for Information Technology and Architecture",
+      "date": "Sep 2018 - June 2020",
+      "accomplishments": [
+        "Research in the fields of robotics, 3D scanning, and human-computer-interaction (HCI) and work on innovative projects for design and building technology.",
+        "Explored advanced algorithms for 3D scanning (point-cloud) with Python, NumPy and Open3D.",
+        "Engaged in UI/UX projects, demonstrating a strong understanding of user-centered design principles"
+      ],
+      "institute_introduction": "CITA is an interdisciplinary research center in Europe, well known for digital technologies and innovations for design",
+      "institute_link": "https://royaldanishacademy.com/en",
+      "other_links":[{
+        "name":"Research Project Publication",
+        "link":"https://issuu.com/link0912/docs/ke_lin_portfolio_2020"
+      }]
+    },
+    "ncku":{
+      "institute_name": "National Cheng Kung University",
+      "title":"Bachelor of Architecture",
+      "sub_title": "Specialized in Design tools and Digital Design",
+      "date": "Sep 2013 - June 2018",
+      "accomplishments": [
+        "Exchange workshop in Tsinghua University, Beijing",
+        "Participate in Taiwan exhibit in Milan Expo 2015",
+        "Internship in Helsinkizurich, by Antti Ahlava"
+      ],
+      "institute_introduction": "NCKU is ranked second among universities in Taiwan.",
+      "institute_link": "https://royaldanishacademy.com/en",
+      "other_links":[{
+        "name":"Research Project Publication",
+        "link":"https://issuu.com/link0912/docs/ke_lin_portfolio_2020"
+      }]
+    }
+  }
 }
+
