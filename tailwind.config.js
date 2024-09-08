@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -13,8 +14,8 @@ module.exports = {
         'menu-font-hover': '#ffffff',
         'content-font': '#faf4be',
         'content-sub-font': '#1f2b38',
-        'basic': '#516275',
-        'middle': '#fcf18d',
+        'basic': '#697c91',
+        'middle': '#faf4be',
         'advanced': '#d4c22a',
       },
       fontFamily: {

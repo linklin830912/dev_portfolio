@@ -4,6 +4,7 @@ import ResumePage from "../pages/ResumePage";
 import ProjectPage from "../pages/ProjectPage";
 import ContactsPage from "../pages/ContactsPage";
 import TitleCanvas from "../components/canvas/TitleCanvas";
+import style from "./styles/UnderlineMarkup.module.css"
 
 function PageSection() {
     return (

@@ -3,7 +3,6 @@ import IntroBlock from "../blocks/IntroBlock.about";
 import SkillBlock from "../blocks/SkillBlock.about";
 import WorkBlock from "../blocks/WorkBlock.about";
 import EducationBlock from "../blocks/EducationBlock.about";
-import TitleCanvas from "../components/canvas/TitleCanvas";
 
 function AboutPage() {   
     return (

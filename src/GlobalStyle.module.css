@@ -1,0 +1,20 @@
+.h2Container u {
+    color: #d4c22a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bulletPoint u{
+    color: #d4c22a;
+    font-weight: bold;
+    text-decoration: none;
+}
+.bulletPoint::before{
+    content:'📌 ';
+}
+.urlA::before{
+    content:'🌐 '
+}
+.pinPoint::before{
+    content: '📍 ';
+}

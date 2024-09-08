@@ -2,6 +2,7 @@ import React from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 import { IKImage } from 'imagekitio-react';
 import SkillTag, { SkillTagProps } from "../components/tags/SkillTag";
+import style from "../GlobalStyle.module.css"
 
 
 function ProjectPage() {
@@ -11,7 +12,7 @@ function ProjectPage() {
     //     frameworkUrl: "WebGL Builds/Build/WebGL Builds.framework.js",
     //     codeUrl: "WebGL Builds/Build/WebGL Builds.wasm",
     // });
-    return <div id="projects" className="flex flex-col items-center justify-center">
+    return <div id="projects" className="flex flex-col items-center md:items-end">
         <ProjectCard date="Sep-2024" from="individual" title="Bridge Game"
             src="bridgeGame.png" href="https://play.unity.com/en/games/95dddd94-3271-4e15-8f00-53e9385e812d/anu2024-u7819042"
             skills={[{ text: "Unity", level: 3 }, { text: "C#", level: 3 }]}
@@ -62,26 +63,26 @@ function ProjectCard(props: ProjectCardProps) {
     }
     return (
         <a onMouseOver={handleMouseOver} href={props.href} target="_blank"
-            className="relative w-[250px] md:w-[350px] flex flex-col items-end mb-3 text-menu-font text-h6 bg-menu-blue hover:bg-menu-hover-blue px-3 py-2 rounded-[5px]" rel="noreferrer">
-            <div className="absolute left-0 top-0 w-[100%] h-[100%] bg-menu-blue opacity-70 hover:opacity-0 z-0"></div>
-            <div className="flex flex-col md:flex-row">
+            className="relative w-[250px] md:w-[350px] flex flex-col items-end mb-3 text-menu-font text-h6 bg-background-blue hover:bg-menu-hover-blue px-3 py-2 rounded-[5px]" rel="noreferrer">
+            <div className="absolute left-0 top-0 w-[100%] h-[100%] bg-background-blue opacity-70 hover:opacity-0 z-0"></div>
+            <div className={`${style.pinPoint} flex flex-col md:flex-row`}>
                 <div className="md:mr-3 flex flex-col md:justify-end md:items-end z-10 text-right">
-                    <h5 className="text-h5 font-bold leading-none mb-1">{props.title}</h5>
-                    <div className="flex flex-row md:flex-col items-end">
-                        <h6 className="mr-2 md:mr-0">{props.from }</h6>
+                    <h5 className={` text-h5 leading-tight mb-1`}>{props.title}</h5>
+                    <div className="flex flex-row md:flex-col items-end justify-end font-light text-h6">
+                        <h6 className="mr-2 md:mr-0">{props.from}</h6>
                         <h6 >{props.date }</h6>
                     </div>
                     
                 </div>
                 
-                    <IKImage width={"220px"} 
+                    <IKImage width={"220px"}
                     urlEndpoint={process.env.REACT_APP_IK_URL_ENDPOINT} 
                     path={props.src}
                     />
                 
             </div>
             <div className="flex flex-row mt-2 flex-wrap z-10">
-                {props.skills.map((skill) => <SkillTag isMini text={skill.text} level={skill.level} />)}
+                {props.skills.map((skill, index) => <SkillTag isMini key={index} text={skill.text} level={skill.level} />)}
             </div>
         </a>
     );

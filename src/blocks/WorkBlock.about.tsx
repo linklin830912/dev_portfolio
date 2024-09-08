@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { backgroundBlueColor, contentFontColor } from "..";
+import style from "../GlobalStyle.module.css"
 
 const LINE_WIDTH = 16;
 function WorkBlock() {
@@ -74,27 +76,34 @@ type WorkTimeCardProps = {
     otherLinks: {name:string, link:string}[];
 }
 function WorkTimeCard(props: WorkTimeCardProps) { 
+    const { t } = useTranslation(["about"]);
     return <>
-        <div className={`col-start-2 row-start-${props.rowNumber} ml-5 text-content-font hover:text-menu-font-hover relative bottom-3 cursor-pointer mb-10`}
+        <div className={`col-start-2 row-start-${props.rowNumber} ml-5 text-content-font  relative bottom-3 cursor-pointer mb-10`}
             onClick={props.handleClick}>
-            <div className="relative left-[-27.5px] top-[25px]"><WorkBulletPoint isSelected={ !props.isDetailHidden} /></div>
+            <div className="relative left-[-27.5px] top-[25px]"><WorkBulletPoint isSelected={!props.isDetailHidden} /></div>
+            <div className="hover:text-advanced">
+                <h3 className="text-h3 font-bold">{props.title}</h3>
+                <h4 className="text-h4">{props.companyName}</h4>
+                <h5 className="text-h6 font-light">{props.date}</h5>
+            </div>
             
-            <h3 className="text-h3 font-bold">{props.title}</h3>
-            <h4 className="text-h4 font-bold">{props.companyName}</h4>
-            <h5 className="text-h5 italic">{props.date}</h5>   
             {props.isDetailHidden && <div>
-                <h5 className="text-h5 mt-3 font-bold">Accomplishments</h5>
-                {props.accomplishments.map((accomplishment, index) => <h6 className="text-h6 font-semibold mb-3" key={index}>- {accomplishment}</h6>)}
-                <h5 className="text-h5 mt-3 font-bold">Role Description</h5>
-                <h6 className="text-h6">{props.roleDescription}</h6>
-                <h5 className="text-h5 mt-3 font-bold">Company Introdution</h5>
-                <h6 className="text-h6">{props.companyIntroduction}</h6>
-                <h5 className="text-h5 mt-3 font-bold">Company Site</h5>
-                <h6 className="text-h6">{props.companyLink}</h6>
-                {props.otherLinks.map((otherLink, index) => <div key={index}>
-                    <h5 className="text-h5 mt-3 font-bold">{otherLink.name}</h5>
-                    <h6 className="text-h6 font-semibold mb-3">{otherLink.link}</h6>
-                    </div>)}
+                <h5 className="text-h6 mt-3 font-light text-basic">{ t("work_experience.accomplishments")}</h5>
+                {props.accomplishments.map((accomplishment, index) =>
+                    <h6 className={`${style.bulletPoint} font-light text-h6 mb-3`} key={index} dangerouslySetInnerHTML={{ __html: accomplishment }}></h6>)}
+                <h5 className="text-h6 mt-3 font-light text-basic">{ t("work_experience.role_description")}</h5>
+                <h6 className={`${style.h2Container} text-h6 font-light`} dangerouslySetInnerHTML={{__html:props.roleDescription}}></h6>
+                <h5 className="text-h6 mt-3 font-light text-basic">{t("work_experience.company_introcdution")}</h5>
+                
+                <h6 className="text-h6 font-light">{props.companyIntroduction}</h6>
+                
+                <a className={`${style.urlA} text-h6 mt-3 text-advanced font-bold`} target="_blank" href={props.companyLink} rel="noreferrer">{t("work_experience.company_website")}</a>
+                <div>
+                    {props.otherLinks.map((otherLink, index) => <a key={index} target="_blank"
+                        className={`${style.urlA} text-h6 mt-3 text-advanced font-bold`} href={otherLink.link} rel="noreferrer">{otherLink.name}</a>
+                    )}
+                </div>
+                
             </div>}
         </div>
     </>;
@@ -105,7 +114,7 @@ type WorkBulletPointProps = {
 function WorkBulletPoint(props:WorkBulletPointProps) { 
     return (
         <svg width="16" height="16">
-            <circle cx="8" cy="8" r="4" stroke="#faf4be" strokeWidth="2" fill={props.isSelected?"#0b1621":"#ffffff"} />
+            <circle cx="8" cy="8" r="4" stroke={contentFontColor} strokeWidth="2" fill={props.isSelected?backgroundBlueColor:contentFontColor} />
         </svg>
     );
 }

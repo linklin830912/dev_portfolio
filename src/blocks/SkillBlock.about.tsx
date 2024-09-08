@@ -7,7 +7,7 @@ function SkillBlock() {
     const { t } = useTranslation(["about"]);
     return (
         <div>
-            <div className="text-h6 text-menu-font">
+            <div className="text-h6 text-basic font-light">
                 <h6>basic</h6>
                 <div className="w-[25px] h-2 mb-1 rounded-md bg-basic" ></div>
                 <div className="w-[45px] h-2 mb-1 rounded-md bg-middle" ></div>
@@ -136,11 +136,11 @@ type SkillCardProps = {
 
 function SkillCard(props: SkillCardProps) { 
     return (
-        <div className="flex flex-col sm:flex-row m-5">
-            <h5 className="sm:w-[100px] sm:text-right text-content-font text-h5 mr-5">{props.title}</h5>
-            <h4 className="text-content-font text-h4 font-bold">
+        <div className="flex flex-col sm:flex-row m-5 text-content-font font-light">
+            <h5 className="sm:w-[100px] sm:text-right text-h5 mr-5 ">{props.title}</h5>
+            <div className="text-h4 font-bold">
                 { props.children}
-            </h4>
+            </div>
         </div>
     );
 }
