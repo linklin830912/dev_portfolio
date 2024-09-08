@@ -9,9 +9,9 @@ function IntroBlock() {
                 <h2 className="text-h3 md:text-h2">{t('nickName')} Link</h2>
             </div>
             <div className="text-content-font">
-                <h2 className="text-h5 md:text-h4 pb-3">{t('intro')}</h2> 
-                <h2 className="text-h5 md:text-h4 pb-3">{t('background')}</h2>
-                <h2 className="text-h5 md:text-h4">{t('current')}</h2>
+                <h2 className="text-h5 md:text-h4 pb-3" dangerouslySetInnerHTML={{__html:t('intro')}}></h2> 
+                <h2 className="text-h5 md:text-h4 pb-3" dangerouslySetInnerHTML={{__html:t('background')}}></h2>
+                <h2 className="text-h5 md:text-h4" dangerouslySetInnerHTML={{__html:t('current')}}></h2>
             </div>
         </div>
     );

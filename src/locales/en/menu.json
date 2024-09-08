@@ -1,5 +1,9 @@
 {
   "about": "about",
-  "portfolio": "projects",
-  "resume": "resume / contact"
+  "skills": "skills",
+  "work-experience": "professional",
+  "education": "academic",
+  "projects": "projects",
+  "resume": "resume",
+  "contact": "contact"
 }

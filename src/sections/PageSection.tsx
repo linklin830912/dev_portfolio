@@ -1,17 +1,30 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom"
 import AboutPage from "../pages/AboutPage";
 import ResumePage from "../pages/ResumePage";
-import PortfolioPage from "../pages/PortfolioPage";
+import ProjectPage from "../pages/ProjectPage";
+import ContactsPage from "../pages/ContactsPage";
+import TitleCanvas from "../components/canvas/TitleCanvas";
+
 function PageSection() {
     return (
         <div className="w-[100%] px-2 lg:px-0"> 
-            <AboutPage />
-            <Routes>
-                {/* <Route path="/dev_portfolio" element={<AboutPage />} /> */}
-                <Route path="/dev_portfolio/portfolio" element={ <PortfolioPage/> } />
-                <Route path="/dev_portfolio/resume" element={ <ResumePage/> } />
-            </Routes>
+          <div>
+             <TitleCanvas title="About"/>
+               <AboutPage /> 
+            </div>
+          <div>
+             <TitleCanvas title={"Projects"} />
+               <ProjectPage />
+            </div>
+          <div>
+             <TitleCanvas title={"Resume"} offsetY={100} />
+               <ResumePage/>
+            </div>
+          <div>
+             <TitleCanvas title="Contact" offsetY={-100} />
+               <ContactsPage/>
+            </div>
+          
             
         </div>
         

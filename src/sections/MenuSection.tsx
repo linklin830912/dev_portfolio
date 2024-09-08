@@ -11,13 +11,29 @@ function MenuSection() {
                     className="p-5 text-menu-font hover:text-menu-font-hover hover:underline hover:italic font-sans text-h5 md:text-h4">
                     {t('menu:about')}
                 </a>
+                <a href="/#skills"
+                    className="p-5 text-menu-font hover:text-menu-font-hover hover:underline hover:italic font-sans text-h5 md:text-h4">
+                    {t('menu:skills')}
+                </a>
+                <a href="/#work-experience"
+                    className="p-5 text-menu-font hover:text-menu-font-hover hover:underline hover:italic font-sans text-h5 md:text-h4">
+                    {t('menu:work-experience')}
+                </a>
+                <a href="/#education"
+                    className="p-5 text-menu-font hover:text-menu-font-hover hover:underline hover:italic font-sans text-h5 md:text-h4">
+                    {t('menu:education')}
+                </a>
                 <a href="/#projects"
                     className="p-5 text-menu-font hover:text-menu-font-hover hover:underline hover:italic font-sans text-h5 md:text-h4">
-                    {t('menu:portfolio')}
+                    {t('menu:projects')}
+                </a>
+                <a href="/#resume"
+                    className="p-5 text-menu-font hover:text-menu-font-hover hover:underline hover:italic font-sans text-h5 md:text-h4">
+                    {t('menu:resume')}
                 </a>
                 <a href="/#contacts"
                     className="p-5 text-menu-font hover:text-menu-font-hover hover:underline hover:italic font-sans text-h5 md:text-h4">
-                    {t('menu:resume')}
+                    {t('menu:contact')}
                 </a>
                 {/* <MenuButton to="/dev_portfolio" content={t('menu:about')} />
                 <MenuButton to="/dev_portfolio/portfolio"  content={t('menu:portfolio')} />

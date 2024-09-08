@@ -1,5 +1,9 @@
 {
   "about": "關於",
-  "portfolio": "專案",
-  "resume": "簡歷/聯絡"
+  "skills": "技能",
+  "work-experience": "工作",
+  "education": "學校",
+  "projects": "專案",
+  "resume": "簡歷",
+  "contact": "聯絡"
 }

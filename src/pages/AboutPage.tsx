@@ -8,20 +8,19 @@ import TitleCanvas from "../components/canvas/TitleCanvas";
 function AboutPage() {   
     return (
         <div className="block">
-            <div id="about"></div>
-            <TitleCanvas title="About"/>
+            <div id="about"></div>            
             <div className="h-[100vh] flex justify-center z-10 relative">
                <IntroBlock /> 
             </div>
-            <TitleCanvas title="Skills"/>
+            <div id="skills"></div>
             <div className="h-auto min-h-[100vh] flex justify-center items-center z-10 relative">
                 <SkillBlock/>
             </div>
-            <TitleCanvas title="Work Experience"/>
+            <div id="work-experience"></div>
             <div className="h-auto min-h-[100vh] flex justify-center items-center z-10  relative">
                 <WorkBlock/>
             </div>
-            <TitleCanvas title="Education"/>
+            <div id="education"></div>
             <div className="h-auto min-h-[100vh] flex justify-center items-center z-10  relative">
                 <EducationBlock/>
             </div> 
