@@ -1,38 +1,41 @@
 {
-  "hello": "您好",
-  "myName": "我是林格，",
+  "hello": "你好,",
+  "myName": "我是 ",
+  "name": "<u>林格</u>, ",
   "nickName": "或",
-  "intro": "I am a full-stack and web developer with three years of experience, combining a strong background in technology and design.",
-  "background": "I have a deep passion for computer graphics and machine learning, with a dream of becoming a technical expert in user experience across various fields, particularly in 3D. My goal is to seamlessly integrate aesthetics and performance to create impactful and engaging applications.",
-  "current": "Currently, I am back to school,\n Studying in Master of Computing Australian National University.\nSpecialized in Computer Graphics and Computer Vision.",
+  "intro": "我是一個擁有三年經驗的<u>全端</u>和<u>網頁開發</u>，兼具技術和設計背景。",
+  "background": "我對<u>電腦圖學</u>和<u>機器學習</u>有著深厚的熱情，並夢想在用戶體驗、人機互動、3D領域成為技術專家。目標是將美學與效能無縫結合，創造出具有影響力且引人入勝的應用程序。",
+  "current": "目前，我在澳洲國立大學攻讀資訊工程碩士。專攻<u>電腦圖學</u>和<u>機器視覺</u>。",
   "skills":{
-    "programming_professional":" Programming - Professional",
-    "programming_academic":" Programming - Academic",
-    "developer_tools":"Developer tools",
-    "designer_tools":"Designer tools",
-    "interest":"Interest"
+    "programming_professional":"工作累積技能",
+    "programming_academic":"學術累積技能",
+    "developer_tools":"工程工具",
+    "designer_tools":"設計工具",
+    "interest":"專攻領域"
   },
   "work_experience":{
-    "accomplishments":"Accomplishments",
-    "role_description":"Role Description",
-    "company_introcdution":"Company Introdution",
+    "accomplishments":"專項",
+    "role_description":"工作內容",
+    "company_introcdution":"公司簡介",
+    "company_website":"公司網站",
     "ibuypower":{
-      "title":"Mid-Level Web Developer",
+      "title":"Web Developer",
       "companyName":"iBuyPower, Taipei",
       "date":"July 2023 - Jan 2024",
       "accomplishments":[
-        "Implemented the Three.js framework seamlessly within Next.js for enhanced web development capabilities.",
-        "Provided guidance and tutoring to the development team on 3D concepts, including topology, shader material, and 3D rendering.",
-        "Played a pivotal role in the recruitment process, assisting in the hiring of 3D designers for the team.",
-        "Designed and constructed high-performance Responsive Web Design (RWD) pages using Next.js and TypeScript.",
-        "Mentored junior developers, offering guidance and tutoring on C# and SQL to foster their skill development.",
-        "Collaborated effectively in Jenkins, contributing to streamlined and efficient project workflows."
+        "在NextJS中無縫整合ThreeJS框架，提升了網頁開發能力。",
+        "為開發團隊提供<u>指導</u>和<u>教學</u>，涵蓋3D概念，包括拓撲結構、著色器材質和3D渲染。",
+        "協助團隊<u>招聘</u>3D設計師。",
+        "使用NextJS和TypeScript設計並構建了高效能的響應式網頁設計（RWD）頁面。",
+        "<u>指導</u>初級開發人員，提供C#和SQL的指導和教學，促進他們的技能發展。",
+        "使用Jenkins促進項目工作流程的順暢和效率。"
+
       ],
-      "role_description":"In my role as a web developer specializing in 3D, I took the lead in developing a dynamic 3D showroom for a five-member team. As the sole developer well-versed in 3D development, I introduced essential tools like Three.js, WebGL, and fundamental 3D concepts. I also facilitated the team's transition to a 3D-friendly framework, providing guidance and tutoring to acquaint my colleagues with the terminology and principles of 3D development. Additionally, I optimized intricate models for seamless integration across IOS, Android, and desktop platforms, while ensuring top-tier performance with high-quality web pages in Next JS for responsive design. As a team leader, I played a pivotal role in recruiting skilled 3D designers, contributing to an enhanced project management process.",
-      "company_introduction":"iBuyPower, a prominent U.S.-based gaming PC e-commerce brand, is renowned for its customized and pre-built configurations. Recognized as the second-best seller by Intel, it is celebrated for delivering exceptional products and fostering a vibrant gaming community.",
+      "role_description":"作為專攻3D的網頁開發人員，我<u>領導了一個五人團隊開發動態3D頁面</u>。我引入<u>ThreeJS</u>、<u>WebGL</u>以及基本的3D概念並提供<u>指導</u>和<u>教學</u>，讓同事熟悉3D開發的術語和原則。此外，我優化了複雜的3D模型，以實現<u>IOS</u>、<u>Android</u>和<u>桌面</u>平台的無縫整合，並確保在NextJS中實現高效能的響應式網頁設計。作為此項目重點人員，我在<u>招聘3D設計師</u>方面提供協助",
+      "company_introduction":"iBuyPower是一家美國知名的遊戲電腦電子商務品牌，以其客製化和預建配置聞名。作為英特爾認證的第二大銷售商，它因提供卓越的產品並促進活躍的遊戲社群而備受推崇。",
       "company_link":"https://www.ibuypower.com/",
       "other_links":[
-        {"name":"3d-showroom", "link":"https://www.ibuypower.com/3d-showroom/y70"}
+        {"name":"動態3D頁面", "link":"https://www.ibuypower.com/3d-showroom/y70"}
       ]
     },
     "fnz":{
@@ -41,19 +44,19 @@
       "date":"May 2022 - July 2023",
       "company_site":"Company Site",
       "accomplishments":[
-        "Developed high-performance Single Page Applications (SPAs) using React, React-Router, Redux, and React form.",
-        "Created large-scale business system frameworks in C#, .NET, and SQL, utilizing the MVC framework.",
-        "Implemented RESTful APIs, conducted data and code analysis, and facilitated seamless collaboration between frontend and backend development.",
-        "Applied various design patterns proficiently in building large-scale business system frameworks.",
-        "Utilized developer tools such as Postman, Chrome Dev Tools, React Profiler, and SQL Profiler to optimize the development process.",
-        "Demonstrated expertise in Git, DevOps, TeamCity, and JIRA, essential tools for version control, continuous integration, and automated software development processes.",
-        "Provided guidance and tutoring to team members on React and TypeScript."
+        "開發了使用 React、React-Router、Redux 和 React form 的<u>高性能</u>單頁應用程式(SPA)。",
+        "使用 C#、.NET 和 SQL 創建了<u>大規模業務系統</u>，利用了 MVC 框架。",
+        "使用 RESTful API，進行了資料和程式碼分析，並促進了前端和後端開發之間的無縫協作。",
+        "應用多種<u>設計模式</u>，構建大規模業務系統框架。",
+        "使用 Postman、Chrome 開發者工具、React Profiler 和 SQL Profiler 等開發者工具優化了開發過程。",
+        "展示了在 Git、DevOps、TeamCity 和 JIRA 中的專業知識，這些是版本控制、持續整合和自動化軟體開發過程中的重要工具。",
+        "為團隊成員提供了 React 和 TypeScript 的<u>指導</u>。"
       ],
-      "role_description":"As a vital member of an international team, I played a key role in developing sustainable web applications for remote projects in the UK and Germany. Involved in three main projects and offering support to others, I specialized in crafting Single Page Applications (SPAs) on the frontend. Additionally, I actively contributed to backend operations, focusing on the development and maintenance of APIs for seamless integration with frontend applications.",
-      "company_introduction":"FNZ is a globally recognized consulting firm specializing in financial services and applications. With a prestigious clients including industry leaders like Barclays, AVIVA, Standard Life, and more, FNZ has established itself as a trusted advisor in the international financial sector.",
+      "role_description":"為英國和德國的<u>遠程專案</u>中的<u>國際團隊</u>的一員。參與了三個主要專案，並為其他專案提供支持。我專注於前端開發單頁應用程式(SPA)與後端開發和維護，以實現前後端應用程式的無縫整合。",
+      "company_introduction":"FNZ 是一家全球知名的顧問公司，專注於金融服務和應用程序。擁有包括 Barclays、AVIVA、Standard Life 等行業領導者在內的著名客戶，FNZ 已經確立了自己在國際金融領域的可信顧問地位。",
       "company_link":"https://www.fnz.com/",
       "other_links":[
-        {"name":"Sample Client Site", "link":"https://www.jameshay.co.uk/"}
+        {"name":"客戶網站", "link":"https://www.jameshay.co.uk/"}
       ]
     },
     "robotic_plus":{
@@ -61,70 +64,69 @@
       "companyName":"RoboticPlus AI, Shanghai",
       "date":"Sep 2020 - May 2022",
       "accomplishments":[
-        "Led the planning and execution of the ROBIM UI prototype, overseeing the entire process.",
-        "Developed frontend applications in C# and WPF, emphasizing user experience for robotic construction.",
-        "Collaborated with designers in Figma and the Adobe suite to design and plan user interfaces.",
-        "Conducted testing and implemented geometry libraries in C# for enhanced application functionality.",
-        "Collaborated closely with mechanical engineers on TCP (Transmission Control Protocol) testing as part of onsite collaboration efforts."
-
+        "參與 ROBIM UI 原型的<u>規劃</u>和<u>執行</u>，監督流程。",
+        "使用 C# 和 WPF 開發前端應用程序，強調<u>使用者體驗</u>以支援機器人建設。",
+        "<u>與設計師合作</u>，在 Figma 和 Adobe 套件中設計和規劃使用者界面。",
+        "進行<u>測試</u>，並在 C# 中實施幾何庫，以增強應用程序功能。",
+        "<u>與機械工程師緊密合作</u>，現場進行 TCP測試。"
       ],
-      "role_description":"As a vital member of an international team, I played a key role in developing sustainable web applications for remote projects in the UK and Germany. Involved in three main projects and offering support to others, I specialized in crafting Single Page Applications (SPAs) on the frontend. Additionally, I actively contributed to backend operations, focusing on the development and maintenance of APIs for seamless integration with frontend applications.",
-      "company_introdution":"Robotic Plus is a pioneering startup based in Shanghai that focuses on 3D software product and innovative architecture manufacturing solutions. The company is revolutionizing the architecture field by promoting automated solutions for construction, bringing efficiency, and precision to the industry.",
+      "role_description":"作為機器人軟體工程師，與機械工程師、設計師和木匠組成的<u>多元團隊</u>協作。最初從使用 Rhino-Inside 庫在 C# 中創建 3D 工具包開始，這個工具包演變為我們全面的 3D 軟體 ROBIM，具有 WPF UI 和幾何計算及 3D 渲染等先進功能。此外，我<u>負責了木材項目</u>，在 C# 中開發了機器人銑削算法。作為重點前端開發者，我運用了我的<u>UI/UX 設計</u>背景，策略性地規劃和實施 ROBIM 原型的使用者體驗。",
+      "company_introdution":"Robotic Plus 是一家位於上海的創新初創公司，專注於 3D 軟體產品和創新建築製造解決方案。該公司正在通過推動建築自動化解決方案來革新建築領域，為行業帶來效率和精確性。",
       "company_link":"https://www.roboticplus.com/en/about/index/cate_id/59.html",
       "other_links":[
-        {"name":"LinkedIn", "link":"https://www.linkedin.com/company/roboticplus-tech/"}
+        {"name":"RoboticPlus.AI 領英", "link":"https://www.linkedin.com/company/roboticplus-tech/"}
       ]
     }
   },
   "education":{
+    "development":"發展",
+    "institute_introduction":"學院簡介",
+    "institute_website":"學院網站",
     "anu":{
-      "institute_name": "The Australian National University",
+      "institute_name": "澳洲國立大學",
       "title":"Master of Computing",
-      "sub_title": "Specialized in Machine Learning and HCI",
+      "sub_title": "選修機器學習和人機互動",
       "date": "Feb 2024 - Dec 2025",
       "accomplishments": [
-        "Familiar with C++, OpenGL, and understanding of computer graphic",
-        "Familiar with Pytorch, OpenCV, and understanding of computer vision",
-        "Familiar with Java in software construction",
-        "Familiar with C#, Unity game development"
+        "熟悉<u>C++</u>、<u>OpenGL</u>，並了解<u>計算機圖形學</u>",
+        "熟悉<u>Pytorch</u>、<u>OpenCV</u>，並了解<u>計算機視覺</u>",
+        "熟悉 Java 在軟體建設中的應用",
+        "熟悉 C#，<u>Unity</u> 遊戲開發"
       ],
-      "institute_introduction": "ANU is ranked among the top universities globally and is known for its strong emphasis on research and high-quality education",
+      "institute_introduction": "澳洲國立大學 (ANU) 在全球大學排名中名列前茅，並以其強調研究和高品質教育而聞名。",
       "institute_link": "https://www.anu.edu.au/",
       "other_links":[]
     },
     "cita":{
-      "institute_name": "Royal Danish Academy",
+      "institute_name": "丹麥皇家學院",
       "title":"Master of Art",
-      "sub_title": "CITA - Centre for Information Technology and Architecture",
+      "sub_title": "CITA - 資訊技術與建築設計中心",
       "date": "Sep 2018 - June 2020",
       "accomplishments": [
-        "Research in the fields of robotics, 3D scanning, and human-computer-interaction (HCI) and work on innovative projects for design and building technology.",
-        "Explored advanced algorithms for 3D scanning (point-cloud) with Python, NumPy and Open3D.",
-        "Engaged in UI/UX projects, demonstrating a strong understanding of user-centered design principles"
+        "在機器人學、3D掃描和人機互動 (HCI) 領域進行研究，並從事設計和建築技術的創新項目。",
+        "使用 Python、NumPy 和 Open3D 探索 3D 掃描 (點雲) 的先進算法。",
+        "參與 UI/UX 項目，展現出對以使用者為中心的設計原則的深刻理解。"
       ],
-      "institute_introduction": "CITA is an interdisciplinary research center in Europe, well known for digital technologies and innovations for design",
+      "institute_introduction": "CITA 是歐洲一個跨學科的研究中心，因其在設計數位技術和創新方面的貢獻而聞名。",
       "institute_link": "https://royaldanishacademy.com/en",
       "other_links":[{
-        "name":"Research Project Publication",
+        "name":"研究項目出版物",
         "link":"https://issuu.com/link0912/docs/ke_lin_portfolio_2020"
       }]
     },
     "ncku":{
-      "institute_name": "National Cheng Kung University",
+      "institute_name": "國立成功大學",
       "title":"Bachelor of Architecture",
-      "sub_title": "Specialized in Design tools and Digital Design",
+      "sub_title": "專精於設計工具和數位設計",
       "date": "Sep 2013 - June 2018",
       "accomplishments": [
-        "Exchange workshop in Tsinghua University, Beijing",
-        "Participate in Taiwan exhibit in Milan Expo 2015",
-        "Internship in Helsinkizurich, by Antti Ahlava"
+        "在北京清華大學參加交流工作坊",
+        "參加了 2015 米蘭博覽會的台灣展覽",
+        "由 Antti Ahlava 指導的赫爾辛基-蘇黎世實習"
       ],
-      "institute_introduction": "NCKU is ranked second among universities in Taiwan.",
+      "institute_introduction": "成功大學在台灣大學中排名第二。",
       "institute_link": "https://royaldanishacademy.com/en",
-      "other_links":[{
-        "name":"Research Project Publication",
-        "link":"https://issuu.com/link0912/docs/ke_lin_portfolio_2020"
-      }]
+      "other_links":[]
     }
   }
 }

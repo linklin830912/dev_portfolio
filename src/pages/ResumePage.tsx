@@ -18,10 +18,10 @@ function ResumePage() {
             const scrollPosition = window.scrollY;
             if (scrollPosition - position > 0) { 
                 if (scrollPosition > currentScrollY) {
-                    degree -= 1;
+                    degree += 1;
                     degree = Math.max(degree, -90);
                 } else {
-                    degree += 1;
+                    degree -= 1;
                     degree = Math.min(degree, 90);
                  }
                 setDegree(degree);

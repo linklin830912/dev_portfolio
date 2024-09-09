@@ -1,39 +1,35 @@
 import React from "react";
-import { Unity, useUnityContext } from "react-unity-webgl";
 import { IKImage } from 'imagekitio-react';
 import SkillTag, { SkillTagProps } from "../components/tags/SkillTag";
 import style from "../GlobalStyle.module.css"
+import { useTranslation } from "react-i18next";
 
 
 function ProjectPage() {
-    // const { unityProvider } = useUnityContext({
-    //     loaderUrl: "WebGL Builds/Build/WebGL Builds.loader.js",
-    //     dataUrl: "WebGL Builds/Build/WebGL Builds.data",
-    //     frameworkUrl: "WebGL Builds/Build/WebGL Builds.framework.js",
-    //     codeUrl: "WebGL Builds/Build/WebGL Builds.wasm",
-    // });
+    const { t } = useTranslation(["project"]);
+    console.log(t)
     return <div className="flex flex-col md:flex-row items-center md:justify-evenly md:items-end">
         <div>
-            <h6 className={`${style.academic} text-h6 text-basic`}>Academic</h6>
-            <ProjectCard date="Sep-2024" from="individual" title="Bridge Game"
+            <h6 className={`${style.academic} text-h6 text-basic`}>{t("academic")}</h6>
+            <ProjectCard date="Sep-2024" from={t("individual")} title="Bridge Game"
                 src="bridgeGame.png" href="https://play.unity.com/en/games/95dddd94-3271-4e15-8f00-53e9385e812d/anu2024-u7819042"
                 skills={[{ text: "Unity", level: 3 }, { text: "C#", level: 3 }]}
             />
-            <ProjectCard date="Aug-2024" from="individual" title="GMTK GameJam 2024"
+            <ProjectCard date="Aug-2024" from={t("individual")} title="GMTK GameJam 2024"
                 src="gamejam.png" href="https://linklin19940912.itch.io/ssscale"
                 skills={[{ text: "Unity", level: 3 }, { text: "C#", level: 3 }]}
             />
-            <ProjectCard date="Apr-2024" from="groupwork" title="Grass Rendering"
+            <ProjectCard date="Apr-2024" from={t("groupwork")} title="Grass Rendering"
                 src="cg.png" href=""
                 skills={[{ text: "C++", level: 2 }, { text: "OpenGL", level: 1 }]}
             />
-            <ProjectCard date="June-2020" from="CITA" title="Point cloud Research Project"
+            <ProjectCard date="June-2020" from={t("individual")} title="Point cloud Research Project"
                 src="CITA.png" href="https://issuu.com/link0912/docs/ke_lin_portfolio_2020"
                 skills={[{ text: "Python", level: 3 }, { text: "NumPy", level: 2 }]}
             />
         </div>
         <div>
-            <h6 className={`${style.professional} text-h6 text-basic`}>Professional</h6>
+            <h6 className={`${style.professional} text-h6 text-basic`}>{t("professional")}</h6>
             <ProjectCard date="Oct-2023" from="iBuypower" title="3d showroom"
                 src="3d_showroom.png" href="https://www.ibuypower.com/3d-showroom/y70"
                 skills={[{ text: "NextJS", level: 3 }, { text: "ThreeJS", level: 3 }, { text: "React Three Fiber", level: 3 }, { text: "WebGL", level: 2 }]}
@@ -52,10 +48,6 @@ function ProjectPage() {
             />
         </div>
         
-        
-        
-        
-            {/* <Unity unityProvider={unityProvider} style={{width:"800px"}}/> */}
         </div>;
 }
  

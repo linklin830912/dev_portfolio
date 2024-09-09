@@ -5,6 +5,8 @@ import enAbout from './locales/en/about.json';
 import zhAbout from './locales/zh/about.json';
 import enMenu from './locales/en/menu.json';
 import zhMenu from './locales/zh/menu.json';
+import enProject from './locales/en/project.json';
+import zhProject from './locales/zh/project.json';
 import enContact from './locales/en/contact.json';
 import zhContact from './locales/zh/contact.json';
 
@@ -12,11 +14,13 @@ const resources = {
   en: {
     menu: enMenu,
     about: enAbout,
+    project: enProject,
     contact: enContact
   },
   zh: {
     menu: zhMenu,
-    about: zhAbout,
+    about: zhAbout, 
+    project: zhProject,
     contact: zhContact
   }
 };
