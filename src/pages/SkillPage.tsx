@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import SkillTag from "../components/tags/SkillTag";
 
 
-function SkillBlock() { 
+function SkillPage() { 
     const { t } = useTranslation(["about"]);
     return (
         <div>
@@ -146,4 +146,4 @@ function SkillCard(props: SkillCardProps) {
 }
 
 
-export default SkillBlock;
+export default SkillPage;

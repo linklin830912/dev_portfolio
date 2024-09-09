@@ -4,7 +4,7 @@ import { backgroundBlueColor, contentFontColor } from "..";
 import style from "../GlobalStyle.module.css"
 
 const LINE_WIDTH = 16;
-function WorkBlock() {
+function WorkPage() {
     
     const [isDetailHiddenIndex, setIsDetailHiddenIndex] = useState<number>(-1);
     const { t } = useTranslation(["about"]);
@@ -119,4 +119,4 @@ function WorkBulletPoint(props:WorkBulletPointProps) {
     );
 }
 
-export default WorkBlock;
+export default WorkPage;

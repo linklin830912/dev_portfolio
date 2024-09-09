@@ -1,9 +1,11 @@
 {
-  "about": "about",
-  "skills": "skills",
-  "work-experience": "professional",
-  "education": "academic",
-  "projects": "projects",
-  "resume": "resume",
-  "contact": "contact"
+  "menu":[
+    {"title":"about", "href":"/#about"},
+    {"title":"skills", "href":"/#skills"},
+    {"title":"professional", "href":"/#work-experience"},
+    {"title":"education", "href":"/#education"},
+    {"title":"projects", "href":"/#projects"},
+    {"title":"resume", "href":"/#resume"},
+    {"title":"contacts", "href":"/#contacts"}
+  ]
 }

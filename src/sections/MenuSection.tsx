@@ -1,43 +1,16 @@
-import React from "react";
-import MenuButton from "../components/buttons/MenuButton";
+import React, { useEffect, useRef, useState } from "react";
 import LanguageOption from "../components/options/LanguageOption";
 import { useTranslation } from "react-i18next";
+import style from "../GlobalStyle.module.css"
 function MenuSection() {
     const { t } = useTranslation(["menu"]);
+    const tags = t('menu:menu', { returnObjects: true }) as { title: string, href: string }[];
+    const [selectIndex, setSelectIndex] = useState<number>(0);
     return (
         <div className="flex flex-col md:pt-3 md:flex-row md:items-center justify-between h-[100%]">
             <div className="flex flex-col md:flex-row">
-                <a href="/#about"
-                    className="p-5 text-menu-font hover:text-menu-font-hover hover:underline hover:italic font-sans text-h5 md:text-h4">
-                    {t('menu:about')}
-                </a>
-                <a href="/#skills"
-                    className="p-5 text-menu-font hover:text-menu-font-hover hover:underline hover:italic font-sans text-h5 md:text-h4">
-                    {t('menu:skills')}
-                </a>
-                <a href="/#work-experience"
-                    className="p-5 text-menu-font hover:text-menu-font-hover hover:underline hover:italic font-sans text-h5 md:text-h4">
-                    {t('menu:work-experience')}
-                </a>
-                <a href="/#education"
-                    className="p-5 text-menu-font hover:text-menu-font-hover hover:underline hover:italic font-sans text-h5 md:text-h4">
-                    {t('menu:education')}
-                </a>
-                <a href="/#projects"
-                    className="p-5 text-menu-font hover:text-menu-font-hover hover:underline hover:italic font-sans text-h5 md:text-h4">
-                    {t('menu:projects')}
-                </a>
-                <a href="/#resume"
-                    className="p-5 text-menu-font hover:text-menu-font-hover hover:underline hover:italic font-sans text-h5 md:text-h4">
-                    {t('menu:resume')}
-                </a>
-                <a href="/#contacts"
-                    className="p-5 text-menu-font hover:text-menu-font-hover hover:underline hover:italic font-sans text-h5 md:text-h4">
-                    {t('menu:contact')}
-                </a>
-                {/* <MenuButton to="/dev_portfolio" content={t('menu:about')} />
-                <MenuButton to="/dev_portfolio/portfolio"  content={t('menu:portfolio')} />
-                <MenuButton to="/dev_portfolio/resume" content={t('menu:resume')} /> */}
+                {tags.map((tag, index) => <MenuTag key={index} title={tag.title} href={tag.href} index={index} isSelected={index === selectIndex}
+                    handleClick={()=>setSelectIndex(index)} />)}
             </div>
             <div className="text-right p-1 pb-32 text-h3 text-menu-font">{"▹"}</div>
             <div className="p-5">
@@ -46,5 +19,20 @@ function MenuSection() {
             
         </div>
     );
- }
+}
+ 
+type MenuTagProps = {
+    href: string;
+    title: string;
+    isSelected: boolean;
+    index: number;
+    handleClick: ()=>void;
+}
+function MenuTag(props:MenuTagProps) { 
+    const aRef = useRef<HTMLAnchorElement>(null);
+    return <a href={props.href} ref={aRef} onClick={props.handleClick}
+                className={`p-5 ${props.isSelected? style.menuSelected : ""}  ${props.isSelected? "text-advanced font-bold": "text-basic" } hover:font-bold hover:text-menu-font text-h5 md:text-h4`}>
+                {props.title}
+            </a>
+}
 export default MenuSection;

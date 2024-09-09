@@ -23,7 +23,7 @@ module.exports = {
         serif: ['Merriweather', 'serif'],
       },
       fontSize: {
-        'h0': '180px',
+        'h0': '240px',
         'h1': '52px',
         'h2': '36px',
         'h3': '24px',

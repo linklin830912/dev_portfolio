@@ -1,3 +1,15 @@
+:root{
+  --background-blue: '#0b1621';
+  --menu-blue: '#17222e';
+  --menu-hover-blue: '#1e2c3b';
+  --menu-font: '#faf4be';
+  --menu-font-hover: '#ffffff';
+  --content-font: '#faf4be';
+  --content-sub-font: '#1f2b38';
+  --basic: '#697c91';
+  --middle: '#fcf18d';
+  --advanced: '#d4c22a';
+}
 .h2Container u {
     color: #d4c22a;
     font-weight: bold;
@@ -15,6 +27,49 @@
 .urlA::before{
     content:'🌐 '
 }
-.pinPoint::before{
-    content: '📍 ';
+.academic::before{
+    content: '🎓';
+    font-size: 20px;
 }
+.professional::before{
+    content: '👜';
+    font-size: 20px;
+}
+.pinPoint::before{
+    content: '↗️';
+    font-size: 15px;
+    position: absolute;
+    right: 95%;
+    top: 0%;
+}
+.spotlightLeft {
+    width: 100vw;
+    height: 30vh;
+    background-image: linear-gradient(to right, #0b1621, #faf4be, #0b1621);
+    position: absolute;
+    left: -60vw;
+    opacity: 0.5;
+}
+.spotlightRight {
+    width: 100vw;
+    height: 30vh;
+    background-image: linear-gradient(to right, #0b1621, #faf4be, #0b1621);
+    position: absolute;
+    left: 60vw;
+    opacity: 0.5;
+}
+.menuSelected::before{
+    content:'⚓';
+    position: relative;
+    top:0px;
+    animation: anchor 0.5s;
+}
+@keyframes anchor{
+    0%{
+        top:-100px;
+    }
+    100%{
+        top:0px;
+    }
+}
+

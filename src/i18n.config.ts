@@ -5,15 +5,19 @@ import enAbout from './locales/en/about.json';
 import zhAbout from './locales/zh/about.json';
 import enMenu from './locales/en/menu.json';
 import zhMenu from './locales/zh/menu.json';
+import enContact from './locales/en/contact.json';
+import zhContact from './locales/zh/contact.json';
 
 const resources = {
   en: {
     menu: enMenu,
-    about: enAbout
+    about: enAbout,
+    contact: enContact
   },
   zh: {
     menu: zhMenu,
-    about: zhAbout
+    about: zhAbout,
+    contact: zhContact
   }
 };
 

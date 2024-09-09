@@ -1,9 +1,11 @@
 {
-  "about": "關於",
-  "skills": "技能",
-  "work-experience": "工作",
-  "education": "學校",
-  "projects": "專案",
-  "resume": "簡歷",
-  "contact": "聯絡"
+  "menu":[
+    {"title":"關於", "href":"/#about"},
+    {"title":"技能", "href":"/#skills"},
+    {"title":"工作", "href":"/#work-experience"},
+    {"title":"學校", "href":"/#education"},
+    {"title":"專案", "href":"/#projects"},
+    {"title":"簡歷", "href":"/#resume"},
+    {"title":"聯絡", "href":"/#contacts"}
+  ]
 }
