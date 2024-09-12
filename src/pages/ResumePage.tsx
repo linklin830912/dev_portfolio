@@ -38,15 +38,15 @@ function ResumePage() {
     }, []);
     return (
         <div ref={ containerRef} className="h-[100vh] flex-row flex justify-center items-center relative">
-            <div className="absolute w-[100vw] h-[100vh] overflow-hidden">
+            <div className="absolute w-[100vw] h-[100vh] overflow-hidden hidden md:block">
                 <div className={style.spotlightLeft} style={{ transform: `rotate(${degree}deg)` }}></div>
                 <div className={style.spotlightRight}  style={{transform: `rotate(${-degree}deg)`}}></div>
             </div>            
             <a className={`w-[100%] max-w-[350px] ${styles.floatA} px-10 py-3 bg-content-font hover:bg-advanced text-menu-blue font-bold rounded-[100px] text-h3 whitespace-nowrap relative`}
-                href="https://drive.google.com/uc?export=download&id=1eFiIcnGcoJz1K6-FVq9YhtAhVNK1uHqw">                
+                href="https://drive.google.com/uc?export=download&id=1VAWXJwfLAKRMS8xj11dI-HISWTyGsLuA">                
                 <div className="flex flex-row justify-center items-center"><h2 className="mr-3">{t("resume")}</h2> <DownloadIcon /></div> 
             </a> 
         </div>
-    );//https://drive.google.com/file/d/1eFiIcnGcoJz1K6-FVq9YhtAhVNK1uHqw/view?usp=drive_link
+    );//https://drive.google.com/file/d/1VAWXJwfLAKRMS8xj11dI-HISWTyGsLuA/view?usp=drive_link
  }
 export default ResumePage;

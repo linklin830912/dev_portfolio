@@ -50,7 +50,8 @@ function SkillPage() {
                     </div>
                     <div className="flex flex-wrap">
                         <SkillTag text="MicrosoftSQL" level={2} />
-                        <SkillTag text="Redis" level={2} />   
+                        <SkillTag text="Redis" level={2} /> 
+                        <SkillTag text="GraphQL" level={1} /> 
                     </div>
                     <div className="flex flex-wrap">
                         <SkillTag text="Python" level={3} />
@@ -64,7 +65,11 @@ function SkillPage() {
                 children={<>
                         <SkillTag text="C++" level={2} />
                         <SkillTag text="JAVA" level={3} />   
-                        <SkillTag text="Pytorch" level={1} />   
+                        <SkillTag text="Pytorch" level={1} />
+                     
+                        <SkillTag text="PostgreSQL" level={1} />
+                        <SkillTag text="MongoDB" level={1} />  
+                        <SkillTag text="Firebase" level={1} />  
                     </>}
             />
 
@@ -73,9 +78,10 @@ function SkillPage() {
                     <div className="flex flex-wrap">
                         <SkillTag text="Git" level={3} />
                         <SkillTag text="Fork" level={3} />   
+                        <SkillTag text="Docker" level={1} /> 
                     </div>
                     <div className="flex flex-wrap">
-                        <SkillTag text="DevOps" level={2} />
+                        <SkillTag text="Azure DevOps" level={2} />
                         <SkillTag text="JIRA" level={3} />   
                         <SkillTag text="Jenkins" level={1} /> 
                     </div>
