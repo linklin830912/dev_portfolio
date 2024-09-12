@@ -46,9 +46,8 @@ function ProjectPage() {
                 src="roboticplusAi.png" href=""
                 skills={[{ text: "Python", level: 3 }, { text: "C#", level: 3 }, { text: "Rhino3D", level: 2 }]}
             />
-        </div>
-        
-        </div>;
+        </div>        
+    </div>;
 }
  
 type ProjectCardProps = {
