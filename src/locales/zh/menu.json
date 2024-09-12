@@ -1,11 +1,11 @@
 {
   "menu":[
-    {"title":"關於", "href":"/#about"},
-    {"title":"技能", "href":"/#skills"},
-    {"title":"工作", "href":"/#work-experience"},
-    {"title":"學校", "href":"/#education"},
-    {"title":"專案", "href":"/#projects"},
-    {"title":"簡歷", "href":"/#resume"},
-    {"title":"聯絡", "href":"/#contacts"}
+    {"title":"關於", "href":"/dev_portfolio/#about"},
+    {"title":"技能", "href":"/dev_portfolio/#skills"},
+    {"title":"工作", "href":"/dev_portfolio/#work-experience"},
+    {"title":"學校", "href":"/dev_portfolio/#education"},
+    {"title":"專案", "href":"/dev_portfolio/#projects"},
+    {"title":"簡歷", "href":"/dev_portfolio/#resume"},
+    {"title":"聯絡", "href":"/dev_portfolio/#contacts"}
   ]
 }

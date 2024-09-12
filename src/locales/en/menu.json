@@ -1,7 +1,7 @@
 {
   "menu":[
     {"title":"about", "href":"/dev_portfolio/#about"},
-    {"title":"skills", "href":"/dev_portfolio//#skills"},
+    {"title":"skills", "href":"/dev_portfolio/#skills"},
     {"title":"professional", "href":"/dev_portfolio/#work-experience"},
     {"title":"education", "href":"/dev_portfolio/#education"},
     {"title":"projects", "href":"/dev_portfolio/#projects"},

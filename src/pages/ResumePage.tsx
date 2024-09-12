@@ -47,6 +47,6 @@ function ResumePage() {
                 <div className="flex flex-row justify-center items-center"><h2 className="mr-3">{t("resume")}</h2> <DownloadIcon /></div> 
             </a> 
         </div>
-    );//https://drive.google.com/file/d/1VAWXJwfLAKRMS8xj11dI-HISWTyGsLuA/view?usp=drive_link
+    );
  }
 export default ResumePage;
