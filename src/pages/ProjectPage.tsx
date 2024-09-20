@@ -11,6 +11,11 @@ function ProjectPage() {
     return <div className="flex flex-col md:flex-row items-center md:justify-evenly md:items-end">
         <div>
             <h6 className={`${style.academic} text-h6 text-basic`}>{t("academic")}</h6>
+            <ProjectCard date="Sep-2024" from={t("individual")} title="Before Timeout"
+                src="beforeTimeout.png" href="https://linklin19940912.itch.io/before-timeout"
+                skills={[{ text: "Unity", level: 3 }, { text: "C#", level: 3 }]}
+                specialDescription="Upcoming: Oct Sketchoween GameJam"
+            />
             <ProjectCard date="Sep-2024" from={t("individual")} title="Bridge Game"
                 src="bridgeGame.png" href="https://play.unity.com/en/games/95dddd94-3271-4e15-8f00-53e9385e812d/anu2024-u7819042"
                 skills={[{ text: "Unity", level: 3 }, { text: "C#", level: 3 }]}
@@ -56,7 +61,8 @@ type ProjectCardProps = {
     title: string,
     src: string,
     href: string,
-    skills:SkillTagProps[]
+    skills: SkillTagProps[],
+    specialDescription?: string 
 }
 function ProjectCard(props: ProjectCardProps) { 
     const handleMouseOver = () => {
@@ -65,13 +71,16 @@ function ProjectCard(props: ProjectCardProps) {
     return (
         <a onMouseOver={handleMouseOver} href={props.href} target="_blank"
             className={`${style.pinPoint} relative w-[250px] sm:w-[350px] flex flex-col items-end mb-3 text-menu-font text-h6 bg-background-blue hover:bg-menu-hover-blue px-3 py-2 rounded-[5px]`} rel="noreferrer">
+            <h5 className={`text-h6 font-bold leading-tight text-basic mb-1`}>{ props.specialDescription}</h5>
             <div className="absolute left-0 top-0 w-[100%] h-[100%] bg-background-blue opacity-70 hover:opacity-0 z-0"></div>
             <div className={`flex flex-col sm:flex-row`}>
                 <div className="sm:mr-3 flex flex-col sm:justify-end sm:items-end z-10 text-right">
-                    <h5 className={` text-h5 leading-tight mb-1`}>{props.title}</h5>
+                   
+                    <h5 className={`text-h5 leading-tight font-bold mb-1`}>{props.title}</h5>
                     <div className="flex flex-row sm:flex-col items-end justify-end font-light text-h6">
                         <h6 className="mr-2 sm:mr-0">{props.from}</h6>
-                        <h6 >{props.date }</h6>
+                        <h6 >{props.date}</h6>
+                        
                     </div>
                     
                 </div>
