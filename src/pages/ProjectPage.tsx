@@ -11,10 +11,15 @@ function ProjectPage() {
     return <div className="flex flex-col md:flex-row items-center md:justify-evenly md:items-end">
         <div>
             <h6 className={`${style.academic} text-h6 text-basic`}>{t("academic")}</h6>
+            <ProjectCard date="Oct-2024" from={t("individual")} title="White Maze Rescue"
+                src="1-bit.png" href="https://linklin19940912.itch.io/white-maze-rescue"
+                skills={[{ text: "Unity", level: 3 }, { text: "C#", level: 3 }, { text: "HLSL", level: 1 }, { text: "Shader", level: 2 }]}
+                specialDescription="Working on Submission: Oct 1-bit GameJam"
+            />
             <ProjectCard date="Sep-2024" from={t("individual")} title="Before Timeout"
                 src="beforeTimeout.png" href="https://linklin19940912.itch.io/before-timeout"
                 skills={[{ text: "Unity", level: 3 }, { text: "C#", level: 3 }]}
-                specialDescription="Upcoming: Oct Sketchoween GameJam"
+                specialDescription="Ready for Voting: Oct Sketchoween GameJam"
             />
             <ProjectCard date="Sep-2024" from={t("individual")} title="Bridge Game"
                 src="bridgeGame.png" href="https://play.unity.com/en/games/95dddd94-3271-4e15-8f00-53e9385e812d/anu2024-u7819042"
