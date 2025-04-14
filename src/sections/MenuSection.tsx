@@ -9,7 +9,8 @@ function MenuSection() {
     return (
         <div className="flex flex-col md:pt-3 md:flex-row md:items-center justify-between h-[100%]">
             <div className="flex flex-col md:flex-row">
-                {tags.map((tag, index) => <MenuTag key={index} title={tag.title} href={tag.href} index={index} isSelected={index === selectIndex}
+                {tags.map((tag, index) => <MenuTag key={index}
+                    title={tag.title} href={tag.href} index={index} isSelected={index === selectIndex}
                     handleClick={()=>setSelectIndex(index)} />)}
             </div>
             <div className="text-right p-1 pb-32 text-h3 text-menu-font">{"▹"}</div>
@@ -30,7 +31,8 @@ type MenuTagProps = {
 }
 function MenuTag(props:MenuTagProps) { 
     const aRef = useRef<HTMLAnchorElement>(null);
-    return <a href={props.href} ref={aRef} onClick={props.handleClick}
+    return <a href={props.href} ref={aRef}
+        onClick={props.handleClick}
                 className={`p-5 ${props.isSelected? style.menuSelected : ""}  ${props.isSelected? "text-advanced font-bold": "text-basic" } hover:font-bold hover:text-menu-font text-h5 md:text-h4`}>
                 {props.title}
             </a>

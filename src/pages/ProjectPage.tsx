@@ -44,6 +44,10 @@ function ProjectPage() {
         </div>
         <div>
             <h6 className={`${style.professional} text-h6 text-basic`}>{t("professional")}</h6>
+            <ProjectCard date="Feb-2025" from="Eolas Solutions" title="Fios"
+                src="fios.png" href="https://fios.eolassolutions.com.au/"
+                skills={[{ text: "NextJS", level: 3 }, { text: "Open AI", level: 2 }]}
+            />
             <ProjectCard date="Oct-2023" from="iBuypower" title="3d showroom"
                 src="3d_showroom.png" href="https://www.ibuypower.com/3d-showroom/y70"
                 skills={[{ text: "NextJS", level: 3 }, { text: "ThreeJS", level: 3 }, { text: "React Three Fiber", level: 3 }, { text: "WebGL", level: 2 }]}

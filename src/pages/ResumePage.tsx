@@ -4,6 +4,7 @@ import styles from "../components/buttons/styles/FloatButton.module.css";
 import DownloadIcon from "../components/icons/DownloadIcon";
 import style from "../GlobalStyle.module.css"
 import { useTranslation } from "react-i18next";
+import { Download } from 'lucide-react';
 
 function ResumePage() {    
     const containerRef = useRef<HTMLDivElement>(null);
@@ -37,15 +38,23 @@ function ResumePage() {
     };
     }, []);
     return (
-        <div ref={ containerRef} className="h-[100vh] flex-row flex justify-center items-center relative">
-            <div className="absolute w-[100vw] h-[100vh] overflow-hidden hidden md:block">
-                <div className={style.spotlightLeft} style={{ transform: `rotate(${degree}deg)` }}></div>
-                <div className={style.spotlightRight}  style={{transform: `rotate(${-degree}deg)`}}></div>
-            </div>            
-            <a className={`w-[100%] max-w-[350px] ${styles.floatA} px-10 py-3 bg-content-font hover:bg-advanced text-menu-blue font-bold rounded-[100px] text-h3 whitespace-nowrap relative`}
-                href="https://drive.google.com/uc?export=download&id=1VAWXJwfLAKRMS8xj11dI-HISWTyGsLuA">                
-                <div className="flex flex-row justify-center items-center"><h2 className="mr-3">{t("resume")}</h2> <DownloadIcon /></div> 
-            </a> 
+        <div ref={ containerRef} className="h-[100vh] flex-row flex gap-x-5 justify-center items-center relative">
+            <a className={`${styles.floatA} px-10 py-3 opacity-75 hover:opacity-100 bg-content-font hover:bg-advanced text-menu-blue font-bold rounded-md text-h3 relative`}
+                href="https://drive.google.com/uc?export=download&id=1WOFrtM01e6x6lYMjFxPKNMXzXrtVZlZY">                
+                <div className="flex flex-col justify-center items-center">
+                    <h2 className="mr-3">Comp</h2>
+                    <h2 className="mr-3">{t("resume")}</h2>
+                    <Download className="w-6 stroke-background-blue" />
+                </div> 
+            </a>
+            <a className={`${styles.floatA} px-10 py-3 opacity-75 hover:opacity-100 bg-content-font hover:bg-advanced text-menu-blue font-bold rounded-md text-h3 relative`}
+                href="https://drive.google.com/uc?export=download&id=1Sey89eRnrr8hJiZjfVfolUXelmRIj5W3">                
+                <div className="flex flex-col justify-center items-center">
+                    <h2 className="mr-3">Arch</h2>
+                    <h2 className="mr-3">{t("resume")}</h2>
+                    <Download className="w-6 stroke-background-blue" />
+                </div> 
+            </a>            
         </div>
     );
  }
