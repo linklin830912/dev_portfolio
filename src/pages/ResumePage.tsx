@@ -39,18 +39,18 @@ function ResumePage() {
     }, []);
     return (
         <div ref={ containerRef} className="h-[100vh] flex-row flex gap-x-5 justify-center items-center relative">
-            <a className={`${styles.floatA} px-10 py-3 opacity-75 hover:opacity-100 bg-content-font hover:bg-advanced text-menu-blue font-bold rounded-md text-h3 relative`}
+            <a className={`${styles.floatA} px-10 py-3 opacity-75 hover:opacity-100 shadow-md shadow-menu-font-hover bg-content-font hover:bg-advanced text-menu-blue font-bold rounded-md text-h3 relative`}
                 href="https://drive.google.com/uc?export=download&id=1WOFrtM01e6x6lYMjFxPKNMXzXrtVZlZY">                
                 <div className="flex flex-col justify-center items-center">
-                    <h2 className="mr-3">Comp</h2>
+                    <h2 className="mr-3">Dev</h2>
                     <h2 className="mr-3">{t("resume")}</h2>
                     <Download className="w-6 stroke-background-blue" />
                 </div> 
             </a>
-            <a className={`${styles.floatA} px-10 py-3 opacity-75 hover:opacity-100 bg-content-font hover:bg-advanced text-menu-blue font-bold rounded-md text-h3 relative`}
+            <a className={`${styles.floatA} px-10 py-3 opacity-75 hover:opacity-100 shadow-md shadow-menu-font-hover bg-content-font hover:bg-advanced text-menu-blue font-bold rounded-md text-h3 relative`}
                 href="https://drive.google.com/uc?export=download&id=1Sey89eRnrr8hJiZjfVfolUXelmRIj5W3">                
                 <div className="flex flex-col justify-center items-center">
-                    <h2 className="mr-3">Arch</h2>
+                    <h2 className="mr-3">Design</h2>
                     <h2 className="mr-3">{t("resume")}</h2>
                     <Download className="w-6 stroke-background-blue" />
                 </div> 

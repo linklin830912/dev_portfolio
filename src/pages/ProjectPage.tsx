@@ -78,36 +78,33 @@ type ProjectCardProps = {
     specialDescription?: string 
 }
 function ProjectCard(props: ProjectCardProps) { 
-    const handleMouseOver = () => {
-        
-    }
+    
     return (
-        <a onMouseOver={handleMouseOver} href={props.href} target="_blank"
-            className={`${style.pinPoint} relative w-[250px] sm:w-[350px] flex flex-col items-end mb-3 text-menu-font text-h6 bg-background-blue hover:bg-menu-hover-blue px-3 py-2 rounded-[5px]`} rel="noreferrer">
-            <h5 className={`text-h6 font-bold leading-tight text-basic mb-1`}>{ props.specialDescription}</h5>
-            <div className="absolute left-0 top-0 w-[100%] h-[100%] bg-background-blue opacity-70 hover:opacity-0 z-0"></div>
-            <div className={`flex flex-col sm:flex-row`}>
-                <div className="sm:mr-3 flex flex-col sm:justify-end sm:items-end z-10 text-right">
-                   
-                    <h5 className={`text-h5 leading-tight font-bold mb-1`}>{props.title}</h5>
-                    <div className="flex flex-row sm:flex-col items-end justify-end font-light text-h6">
-                        <h6 className="mr-2 sm:mr-0">{props.from}</h6>
-                        <h6 >{props.date}</h6>
-                        
+        <div className={`${style.pinPoint} relative w-[250px] sm:w-[350px] flex flex-col items-end mb-3 shadow-lg shadow-menu-hover-blue text-menu-font text-h6 bg-background-blue  hover:bg-menu-hover-blue px-3 py-2 rounded-[5px]`}>
+            <a href={props.href} target="_blank"
+                 rel="noreferrer">
+                <h5 className={`text-h6 font-bold leading-tight text-basic mb-1`}>{ props.specialDescription}</h5>
+                <div className={`flex flex-col sm:flex-row`}>
+                    <div className="sm:mr-3 flex flex-col sm:justify-end sm:items-end z-10 text-right">                    
+                        <h5 className={`text-h5 leading-tight font-bold mb-1`}>{props.title}</h5>
+                        <div className="flex flex-row sm:flex-col items-end justify-end font-light text-h6">
+                            <h6 className="mr-2 sm:mr-0">{props.from}</h6>
+                            <h6 >{props.date}</h6>                            
+                        </div>                        
                     </div>
                     
+                    <IKImage width={"220px"}
+                        urlEndpoint={process.env.REACT_APP_IK_URL_ENDPOINT} 
+                        path={props.src}
+                    />
+                    
                 </div>
-                
-                <IKImage width={"220px"}
-                    urlEndpoint={process.env.REACT_APP_IK_URL_ENDPOINT} 
-                    path={props.src}
-                />
-                
-            </div>
-            <div className="flex flex-row mt-2 flex-wrap z-10">
-                {props.skills.map((skill, index) => <SkillTag isMini key={index} text={skill.text} level={skill.level} />)}
-            </div>
-        </a>
+                <div className="flex flex-row mt-2 flex-wrap z-10">
+                    {props.skills.map((skill, index) => <SkillTag isMini key={index} text={skill.text} level={skill.level} />)}
+                </div>
+            </a>
+        </div>
+        
     );
 }
 export default ProjectPage;
