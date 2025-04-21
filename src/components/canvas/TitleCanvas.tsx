@@ -28,8 +28,7 @@ function TitleCanvas(props:TitleCanvasProps) {
     };
     }, []);
 
-    return <div ref={containerRef} className="hidden h-[100vh] lg:block absolute z-20 pointer-events-none">
-        
+    return <div ref={containerRef} className="hidden h-[100vh] lg:block absolute z-20 pointer-events-none">        
         <h1 className={`text-h0 font-black top-[${props.offsetY ? props.offsetY:"200"}px] text-content-sub-font opacity-50 whitespace-nowrap relative`} style={{ left: `${scrollOffsetX}px`, top:"25%" }} >
             { props.title }
         </h1>
